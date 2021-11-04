@@ -1,0 +1,697 @@
+/* reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.menuContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 940px;
+}
+.cardProduct {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 6.5px;
+  margin-left: 6.5px;
+  margin-bottom: 12px;
+}
+.cardProduct:hover {
+  border: 2px solid #333333;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.cardProduct button:active {
+  background-color: #93d7af;
+  cursor: pointer;
+  border: none;
+}
+.cardProduct figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  background: #f5f5f5;
+}
+.cardProduct h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  width: 260px;
+  height: 40px;
+  margin-top: 32px;
+}
+.cardProduct h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #27ae60;
+  width: 260px;
+  height: 24px;
+  margin-top: 13px;
+}
+.cardProduct p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  width: 260px;
+  height: 17px;
+  color: #828282;
+}
+.cardProduct img {
+  width: 162px;
+  height: 162px;
+}
+.cardProduct button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  width: 106px;
+  height: 40px;
+  background: #27ae60;
+  border: 2px solid #27ae60;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-right: 174px;
+  margin-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 23px;
+}
+.pageContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background: #f5f5f5;
+  margin-bottom: 32px;
+}
+.header-container h1 {
+  color: #333333;
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-left: 109px;
+}
+.header-container p {
+  display: inline-block;
+  color: #eb5757;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.container-search {
+  margin-right: 115px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 15px;
+  width: 365px;
+  height: 60px;
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.container-search input {
+  width: 200px;
+  height: 19px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.container-search input:focus {
+  outline: 0;
+}
+
+.container-search button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  width: 107px;
+  height: 40px;
+  background: #27ae60;
+  border: 2px solid #27ae60;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.container-search button:hover {
+  background-color: #93d7af;
+  border: none;
+  cursor: pointer;
+}
+
+.result {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 23px;
+}
+.result p {
+  display: inline;
+  color: #828282;
+}
+.containerSale {
+  display: flex;
+  justify-content: center;
+}
+
+.carrinho {
+  width: 363px;
+  margin-left: 4vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.carrinho .title {
+  border-radius: 5px 5px 0px 0px;
+  width: 325px;
+  padding: 25px 20px 25px;
+  background-color: #27ae60;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.removeAll {
+  width: 343px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #828282;
+  font-family: "Inter", "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.cardCarrinho {
+  display: flex;
+  align-items: center;
+
+  width: 365px;
+}
+
+.cardCarrinho figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cardCarrinho img {
+  width: 70px;
+  height: 70px;
+}
+.cardCarrinho div {
+  height: 90px;
+}
+.cardCarrinho h1 {
+  font-family: "Inter", "sans-serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.cardCarrinho p {
+  font-family: "Inter", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+}
+.cardCarrinho button {
+  margin-bottom: 70px;
+  position: absolute;
+  margin-left: 290px;
+  font-family: "Inter", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bdbdbd;
+  border: none;
+  background-color: #f5f5f5;
+}
+.cardCarrinho button:hover {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #333333;
+  cursor: pointer;
+}
+.carrinho-separador {
+  width: 340px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+.sacolaVazia {
+  text-align: center;
+}
+
+.sacolaVazia h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 40px;
+}
+.sacolaVazia p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #828282;
+  margin-top: 6px;
+  margin-bottom: 40px;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalPrice h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.totalPrice h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #828282;
+}
+.container-search:hover {
+  border: 2px solid #333333;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+@media (max-width: 1360px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 139px;
+    background: #f5f5f5;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .header-container h1 {
+    color: #333333;
+    font-size: 26px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  .header-container p {
+    display: inline-block;
+    color: #eb5757;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .container-search {
+    margin-right: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 15px;
+    width: 310px;
+    height: 60px;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  .container-search input {
+    width: 200px;
+    height: 19px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .container-search input:focus {
+    outline: 0;
+  }
+
+  .container-search button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    width: 80px;
+    height: 40px;
+    background: #27ae60;
+    border: 2px solid #27ae60;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+
+  .result {
+    text-align: center;
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 17px;
+    color: #333333;
+    margin-bottom: 23px;
+  }
+  .result p {
+    display: inline;
+    color: #828282;
+  }
+
+  .containerSale {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .menuContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 98vw;
+    margin-bottom: 20px;
+  }
+  .carrinho {
+    width: 305px;
+    margin-left: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .carrinho .title {
+    border-radius: 5px 5px 0px 0px;
+    width: 265px;
+    padding: 25px 20px 25px;
+    background-color: #27ae60;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .removeAll {
+    width: 343px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background: #e0e0e0;
+    border: 2px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #828282;
+    font-family: "Inter", "sans-serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .cardCarrinho {
+    display: flex;
+    align-items: center;
+
+    width: 310px;
+  }
+  .cardCarrinho button {
+    margin-bottom: 70px;
+    position: absolute;
+    margin-left: 240px;
+    font-family: "Inter", "sans-serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #bdbdbd;
+    border: none;
+    background-color: #f5f5f5;
+  }
+  .totalPrice {
+    display: flex;
+    justify-content: space-between;
+  }
+  .containerPrice {
+    width: 280px;
+  }
+  .containerPrice button {
+    width: 280px;
+  }
+  .carrinho-separador {
+    width: 280px;
+  }
+}
