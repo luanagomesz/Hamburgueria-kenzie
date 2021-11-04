@@ -57,10 +57,14 @@ function App() {
   const [resultPrice, setResultPrice] = useState(0);
 
   const handleClick = (product) => {
-    setCurrentSale([
-      ...currentSale,
-      products.find((item) => item.id === product.id),
-    ]);
+    if (currentSale.includes(product)) {
+    } else {
+      setCurrentSale([
+        ...currentSale,
+        products.find((item) => item.id === product.id),
+      ]);
+      totalPrice(product);
+    }
   };
 
   const handleRemove = (product) => {

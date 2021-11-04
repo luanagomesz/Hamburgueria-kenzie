@@ -10,7 +10,6 @@ function Product({ id, handleClick, totalPrice }) {
       <button
         onClick={() => {
           handleClick(id);
-          totalPrice(id);
         }}
       >
         Adicionar
